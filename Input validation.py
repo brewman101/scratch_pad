@@ -2,12 +2,13 @@
 
 from math import sqrt
 # Write your solution here
-number=1
-while number!=0:
+while True:
     number=float(input("Please type in a number: "))
+    if number==0:
+        print("Exiting...")
+        break
     if number < 0:
         print("Invalid number")
     else:
         print(sqrt(number))
-
 
